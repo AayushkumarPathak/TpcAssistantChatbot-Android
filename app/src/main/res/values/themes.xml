@@ -1,9 +1,26 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.TpcAssistantChatbot" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Add / merge into your res/values/themes.xml -->
+<resources>
+
+    <!-- Main app theme - use MaterialComponents for all Material widgets -->
+    <style name="Theme.TPCAssistant" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/tpc_orange</item>
+        <item name="colorPrimaryVariant">@color/tpc_orange_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/tpc_orange</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- TextInputLayout focused color -->
+        <item name="colorControlActivated">@color/tpc_orange</item>
     </style>
 
-    <style name="Theme.TpcAssistantChatbot" parent="Base.Theme.TpcAssistantChatbot" />
+    <!-- Toolbar style used in ChatActivity -->
+    <style name="TPCToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/white</item>
+        <item name="titleTextColor">@color/text_primary</item>
+    </style>
+
 </resources>

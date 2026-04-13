@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Add / merge these into your existing res/values/colors.xml -->
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- TPC Brand Colors -->
+    <color name="tpc_orange">#F5821F</color>
+    <color name="tpc_orange_dark">#E06A0A</color>
+    <color name="tpc_orange_light">#FDF1EC</color>
+
+    <!-- Neutrals -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="divider">#E5E7EB</color>
+    <color name="surface">#F3F4F6</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Status -->
+    <color name="error_bg">#FEE2E2</color>
+    <color name="error_text">#B91C1C</color>
+    <color name="success_bg">#F0FDF4</color>
+    <color name="link_blue">#3B82F6</color>
 </resources>

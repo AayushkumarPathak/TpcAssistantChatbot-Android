@@ -1,18 +1,22 @@
 package com.techmagnet.tpcassistantchatbot.ui.chat
 
+
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.techmagnet.tpcassistantchatbot.R
 import com.techmagnet.tpcassistantchatbot.data.model.*
-import com.techmagnet.tpcassistantchatbot.data.remote.RetrofitClient
 import com.techmagnet.tpcassistantchatbot.data.repository.ChatRepository
 import com.techmagnet.tpcassistantchatbot.service.ChatService
 import com.techmagnet.tpcassistantchatbot.utils.TokenManager
 import kotlinx.coroutines.launch
+
 
 class ChatActivity : AppCompatActivity() {
 
@@ -23,7 +27,7 @@ class ChatActivity : AppCompatActivity() {
 
     private lateinit var rvChat: RecyclerView
     private lateinit var etMessage: EditText
-    private lateinit var btnSend: Button
+    private lateinit var btnSend: FloatingActionButton
     private lateinit var tvHumanRequired: TextView
 
     private lateinit var adapter: ChatAdapter
